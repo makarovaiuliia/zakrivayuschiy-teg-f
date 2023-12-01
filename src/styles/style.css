@@ -17,4 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-text);
 }
