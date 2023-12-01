@@ -4,4 +4,9 @@
   --font-weight-text: 465;
   --font-weight-title: 785;
   --font-size: 18px;
+  --main-text-color: #000;
+  --bg-color: #fff;
+  --bg-image: repeating-linear-gradient(#d3d3d3, rgb(211 211 211 / 0) 2px),
+    repeating-linear-gradient(90deg, #d3d3d3, rgb(211 211 211 / 0) 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
 }
