@@ -9,4 +9,9 @@
   --bg-image: repeating-linear-gradient(#d3d3d3, rgb(211 211 211 / 0) 2px),
     repeating-linear-gradient(90deg, #d3d3d3, rgb(211 211 211 / 0) 2px),
     linear-gradient(#e7e7e7, #1a1a1a);
+  --text-stroke: #fff;
+  --button-hover-color: #fff;
+  --svg-starting-color: #fff;
+  --svg-stroke-color: #000;
+  --svg-fill-color: #f00;
 }
