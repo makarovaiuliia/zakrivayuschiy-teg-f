@@ -479,6 +479,7 @@
 }
 
 .dialog__button {
+  justify-content: center;
   padding: 9px 17px;
   line-height: 90%;
 }
