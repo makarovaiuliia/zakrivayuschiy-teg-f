@@ -17,6 +17,7 @@
   --svg-fill-color: #f00;
   --svg-starting-color: #fff;
   --backdrop: #000;
+  --svg-floppy: #fff;
 }
 
 :root.theme-dark {
@@ -31,6 +32,7 @@
   --svg-fill-color: #f00;
   --svg-starting-color: #000;
   --backdrop: #000;
+  --svg-floppy: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,5 +49,6 @@
     --svg-fill-color: #f00;
     --svg-starting-color: #000;
     --backdrop: #000;
+    --svg-floppy: #00cc14;
   }
 }
