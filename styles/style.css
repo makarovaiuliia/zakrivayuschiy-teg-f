@@ -35,7 +35,7 @@
   gap: 25px;
   margin: 102px auto;
   border: 2px solid var(--main-text-color);
-  padding: 120px 0 25px;
+  padding: clamp(7.5rem, 6.3585rem + 4.9231vw, 8.5rem) 0 25px;
   font-family: var(--font-family-accent);
   font-size: 14px;
   text-align: center;
@@ -359,7 +359,7 @@
 }
 
 @keyframes heartSparks {
-
+  
   0% {
     opacity: 0;
   }
