@@ -127,6 +127,7 @@
 }
 
 @keyframes arrow {
+
   0% {
     inset-inline-start: -17px;
   }
@@ -177,6 +178,7 @@
 }
 
 @supports (-webkit-text-stroke-width: 1px) {
+
   .content__card-image-label {
     -webkit-text-stroke-color: var(--text-stroke);
     -webkit-text-stroke-width: 1px;
@@ -348,6 +350,7 @@
 }
 
 @keyframes heartScale {
+
   0% {
     transform: scale(1);
   }
@@ -358,6 +361,7 @@
 }
 
 @keyframes heartSparks {
+
   0% {
     opacity: 0;
   }
@@ -442,6 +446,7 @@
   inline-size: 341px;
   text-transform: uppercase;
   transition: opacity 0.3s ease-in-out;
+  block-size: 194px;
 }
 
 .dialog::backdrop {
@@ -479,10 +484,11 @@
 }
 
 @media (min-width: 1000px) {
+  
   .footer__button {
     align-items: center;
     flex-direction: row;
-    text-align: start;;
+    text-align: start;
   }
 
   .footer__button-svg {
