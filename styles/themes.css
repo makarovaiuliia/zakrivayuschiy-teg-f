@@ -16,6 +16,7 @@
   --svg-stroke-color: #000;
   --svg-fill-color: #f00;
   --svg-starting-color: #fff;
+  --backdrop: #000;
 }
 
 :root.theme-dark {
@@ -29,10 +30,11 @@
   --svg-stroke-color: #00cc14;
   --svg-fill-color: #f00;
   --svg-starting-color: #000;
+  --backdrop: #000;
 }
 
 @media (prefers-color-scheme: dark) {
-  
+
   :root {
     --main-text-color: #00cc14;
     --bg-color: #000;
@@ -44,5 +46,6 @@
     --svg-stroke-color: #00cc14;
     --svg-fill-color: #f00;
     --svg-starting-color: #000;
+    --backdrop: #000;
   }
 }
