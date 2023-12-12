@@ -1,14 +1,113 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+/* Вы не думайте, что я совсем глупый человек...:((
+я просто напутала классы у сердца и поэтому так много несостыковок в анимации было,
+а так она была написана правильно.....:))) */
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
+@keyframes arrow {
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
+  0% {
+    inset-inline-start: -17px;
+  }
+
+  100% {
+    inset-inline-start: -13px;
+  }
+}
+
+.theme-menu__button:disabled::before {
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes heartScale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes heartSparks {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.like-icon {
+  inline-size: 38px;
+  block-size: 36px;
+  transition: linear;
+}
+
+.main-body {
+  transition: 0.3s;
+  transition-delay: 0.03s;
+}
+
+.contour {
+  transition: 0.1s;
+  transition-delay: 0.06s;
+}
+
+.core {
+  transition: 0.03s;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--main-text-color);
+  transition: 0.3s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--main-text-color);
+  transition: 0.3s;
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--svg-fill-color);
+  transition: fill 0.3s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--svg-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core{
+  fill: var(--svg-fill-color);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--svg-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--svg-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: heartScale 0.3s 0.1s ease-in alternate 1;
+}
+
+.like-icon.is-liked .sparks {
+  transform-origin: center;
+  animation: heartSparks 0.3s 0.3s ease-in alternate 1;
+}

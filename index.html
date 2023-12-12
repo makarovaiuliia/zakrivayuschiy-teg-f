@@ -22,8 +22,8 @@
   <body class="page">
     <header class="header">
       <div class="header__disc">
-        <h1 class="header__title">&lt;/html&gt;</h1>
-        <p class="header__subtitle">Закрывающий тег</p>
+        <a href="#" class="header__logo">&lt;/html&gt;</a>
+        <h1 class="header__title">Закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -65,9 +65,9 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/html&gt;</p>
+          <span class="content__card-image-label">&lt;/html&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_blur"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -85,7 +85,11 @@
             чтобы потратить на нее многие годы своей жизни.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -96,17 +100,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -118,7 +122,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -127,9 +131,9 @@
       <article class="content__card">
         <h2 class="content__card-title">1 спринт: Я — чистый лист</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/starting point&gt;</p>
+          <span class="content__card-image-label">&lt;/starting point&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_contrast"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -148,7 +152,11 @@
             Казалось, все всегда будет так прекрасно.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -159,17 +167,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -181,7 +189,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -190,9 +198,9 @@
       <article class="content__card">
         <h2 class="content__card-title">1 спринт: А если не получится?</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/hero&gt;</p>
+          <span class="content__card-image-label">&lt;/hero&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_grayscale"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -209,7 +217,11 @@
             работает.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -220,17 +232,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -242,7 +254,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -251,9 +263,9 @@
       <article class="content__card">
         <h2 class="content__card-title">2 спринт: Погоня за идеалом</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/challenge&gt;</p>
+          <span class="content__card-image-label">&lt;/challenge&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_brightness-contrast"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -271,7 +283,11 @@
             могу ничего понять.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -282,17 +298,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -304,7 +320,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -313,9 +329,9 @@
       <article class="content__card">
         <h2 class="content__card-title">2 спринт: О тех, кто рядом</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/I'm back&gt;</p>
+          <span class="content__card-image-label">&lt;/I'm back&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_hue-rotate"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -335,7 +351,11 @@
             страшного. На практике все встанет на свои места.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -346,17 +366,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -368,7 +388,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -377,9 +397,9 @@
       <article class="content__card">
         <h2 class="content__card-title">3 спринт: Обходные стратегии</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/ready&gt;</p>
+          <span class="content__card-image-label">&lt;/ready&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_opacity"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -396,7 +416,11 @@
             другое.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -407,17 +431,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -429,7 +453,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -438,9 +462,9 @@
       <article class="content__card">
         <h2 class="content__card-title">3 спринт: Когда опускаются руки</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/overcome&gt;</p>
+          <span class="content__card-image-label">&lt;/overcome&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_sepia"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -457,7 +481,11 @@
             И вуаля, на третьем проекте я уже почувствовала себя с ними уверено!
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -468,17 +496,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -490,7 +518,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -499,9 +527,9 @@
       <article class="content__card">
         <h2 class="content__card-title">«Сейчас я здесь»</h2>
         <div class="content__card-image-container">
-          <p class="content__card-image-label">&lt;/win&gt;</p>
+          <span class="content__card-image-label">&lt;/win&gt;</span>
           <img
-            class="content__card-image"
+            class="content__card-image content__card-image_type_invert"
             alt="Девушка смотрит в ноутбук"
             src="./images/image-girl.png"
           />
@@ -521,7 +549,11 @@
             образцам адаптивности.
           </p>
           <div class="content__buttons">
-            <button class="button card__icon-button">
+            <button
+              aria-hidden="true"
+              type="button"
+              class="button card__icon-button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -532,17 +564,17 @@
               >
                 <g class="heart">
                   <path
-                    class="contour"
+                    class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="main-body"
+                    class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
                     fill="var(--svg-starting-color)"
                   />
                   <path
-                    class="core"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="var(--svg-stroke-color)"
                   />
@@ -554,41 +586,41 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button button__main">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-    </main>
-    <footer class="footer">
       <button
-        class="button footer__button"
+        class="button save__button button__main"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg viewBox="0 0 28 28" class="footer__button-svg">
+        <svg viewBox="0 0 28 28" class="save__button-svg">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="dialog-id">
         <div class="dialog__text">
-          <svg viewBox="0 0 28 28" class="footer__button-svg dialog__svg">
+          <svg viewBox="0 0 28 28" class="save__button-svg dialog__svg">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span>Вставьте дискету, чтобы продолжить</span>
+          <p>Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button
-          class="button footer__button dialog__button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text">Ок</span>
-        </button>
+        <form method="dialog">
+          <button
+            class="button save__button dialog__button button__main"
+            type="submit"
+            onclick="window['dialog-id'].close()"
+          >
+            <span class="button__text">Ок</span>
+          </button>
+        </form>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
