@@ -8,9 +8,16 @@
 :root.theme-light {
   --main-text-color: #000;
   --bg-color: #fff;
-  --bg-image: repeating-linear-gradient(#d3d3d3, rgb(211 211 211 / 0) 2px),
-    repeating-linear-gradient(90deg, #d3d3d3, rgb(211 211 211 / 0) 2px),
-    linear-gradient(#e7e7e7, #1a1a1a);
+  --bg-image: repeating-linear-gradient(
+      #d3d3d3 0 1px,
+      rgb(211 211 211 / 0) 1px 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 1px,
+      rgb(211 211 211 / 0) 1px 2px
+    ),
+    linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
   --text-stroke: #fff;
   --button-hover-color: #fff;
   --svg-stroke-color: #000;
@@ -23,8 +30,8 @@
 :root.theme-dark {
   --main-text-color: #00cc14;
   --bg-color: #000;
-  --bg-image: repeating-linear-gradient(#000, rgb(0 0 0 / 0) 2px),
-    repeating-linear-gradient(90deg, #000, rgb(0 0 0 / 0) 2px),
+  --bg-image: repeating-linear-gradient(#000 0 1px, rgb(0 0 0 / 0) 1px 2px),
+    repeating-linear-gradient(90deg, #000 0 1px, rgb(0 0 0 / 0) 1px 2px),
     linear-gradient(#007f0c, #004306);
   --text-stroke: #000;
   --button-hover-color: #00cc14;
@@ -36,12 +43,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
+  
   :root {
     --main-text-color: #00cc14;
     --bg-color: #000;
-    --bg-image: repeating-linear-gradient(#000, rgb(0 0 0 / 0) 2px),
-      repeating-linear-gradient(90deg, #000, rgb(0 0 0 / 0) 2px),
+    --bg-image: repeating-linear-gradient(#000 0 1px, rgb(0 0 0 / 0) 1px 2px),
+      repeating-linear-gradient(90deg, #000 0 1px, rgb(0 0 0 / 0) 1px 2px),
       linear-gradient(#007f0c, #004306);
     --text-stroke: #000;
     --button-hover-color: #00cc14;
