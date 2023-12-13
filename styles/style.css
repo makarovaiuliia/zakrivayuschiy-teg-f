@@ -2,7 +2,7 @@
   margin: 0 auto;
   color: var(--main-text-color);
   font-family: var(--font-family-main);
-  font-variation-settings: var( --font-variation-settings-text);
+  font-variation-settings: var(--font-variation-settings-text);
   font-size: var(--font-size);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -117,6 +117,7 @@
 .theme-menu__button:hover {
   opacity: 0.6;
 }
+
 /* Стили основной части сайта */
 
 .content {
@@ -161,10 +162,10 @@
   (text-stroke: 1px var(--text-stroke)) or
     (-webkit-text-stroke: 1px var(--text-stroke))
 ) {
-
+  
   .content__card-image-label {
-    text-stroke: 1px var(--text-stroke);
     -webkit-text-stroke: 1px var(--text-stroke);
+    text-stroke: 1px var(--text-stroke);
     text-shadow: none;
   }
 }
@@ -268,8 +269,6 @@
   outline-offset: -1px;
 }
 
-/* Стили кнопки */
-
 .save__button {
   margin: 0 0 102px;
   flex-direction: column;
@@ -352,7 +351,7 @@
 }
 
 @media (min-width: 1000px) {
-  
+
   .save__button {
     align-items: center;
     flex-direction: row;
