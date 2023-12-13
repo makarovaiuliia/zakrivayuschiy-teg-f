@@ -1,14 +1,8 @@
-/* Добрый день! У меня появились проблемы с одним вашим комментарием,
-в общем виде он звучит так: "Правила группы transition будет лучше один
-раз указать для основного селектора, тогда переход будет работать на элементе всегда"
-Но когда я выставляю transition на общий селектор: на класс элемента, но
-transition перестает работать. */
-
 .page {
   margin: 0 auto;
   color: var(--main-text-color);
   font-family: var(--font-family-main);
-  font-variation-settings: "wght" var(--font-weight-text);
+  font-variation-settings: var( --font-variation-settings-text);
   font-size: var(--font-size);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -83,6 +77,7 @@ transition перестает работать. */
 .theme-menu__button {
   position: relative;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button::after {
@@ -94,6 +89,7 @@ transition перестает работать. */
   inset-inline-start: 6px;
   block-size: 2px;
   inline-size: calc(100% - 12px);
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -101,7 +97,6 @@ transition перестает работать. */
 }
 
 .theme-menu__button:focus.theme-menu__button::after {
-  transition: transform 0.3s ease; /* если я убираю отсюда это правило, то оно перестает работать */
   transform: scaleX(1);
   transform-origin: left center;
 }
@@ -109,7 +104,6 @@ transition перестает работать. */
 .theme-menu__button:disabled {
   position: relative;
   opacity: 0.6;
-  transition: opacity 0.3s ease; /* если я убираю отсюда это правило, то оно перестает работать */
   pointer-events: none;
 }
 
@@ -122,7 +116,6 @@ transition перестает работать. */
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 /* Стили основной части сайта */
 
@@ -142,7 +135,7 @@ transition перестает работать. */
 .content__card-title {
   border-block-end: 2px solid var(--main-text-color);
   padding: 4px 10px 8px;
-  font-variation-settings: "wght" var(--font-weight-title);
+  font-variation-settings: var(--font-variation-settings-title);
   font-size: var(--font-size);
 }
 
@@ -168,8 +161,9 @@ transition перестает работать. */
   (text-stroke: 1px var(--text-stroke)) or
     (-webkit-text-stroke: 1px var(--text-stroke))
 ) {
-  
+
   .content__card-image-label {
+    text-stroke: 1px var(--text-stroke);
     -webkit-text-stroke: 1px var(--text-stroke);
     text-shadow: none;
   }
@@ -235,6 +229,7 @@ transition перестает работать. */
   overflow: hidden;
   position: relative;
   border: 2px solid var(--main-text-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button__main::after {
@@ -250,13 +245,11 @@ transition перестает работать. */
 }
 
 .button__main:hover.button__main::after {
-  transition: 0.5s ease-in-out;
   transform: translateX(0);
 }
 
 .button__main:focus {
-  box-shadow: 3px 3px var(--main-text-color);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 2px 2px 0 0 var(--main-text-color);
 }
 
 .card__like-button {
@@ -267,12 +260,12 @@ transition перестает работать. */
 
 .card__icon-button {
   padding: 0;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--main-text-color);
   outline-offset: -1px;
-  transition: outline 0.3s ease; /* не работает, если убрать */
 }
 
 /* Стили кнопки */
@@ -318,7 +311,6 @@ transition перестает работать. */
   inline-size: 341px;
   text-transform: uppercase;
   transition: opacity 0.3s ease-in-out;
-  block-size: 194px;
 }
 
 .dialog::backdrop {
@@ -352,6 +344,7 @@ transition перестает работать. */
 
 .dialog__button {
   justify-content: center;
+  text-transform: uppercase;
   margin: 0;
   padding: 9px 17px;
   line-height: 90%;
@@ -359,7 +352,7 @@ transition перестает работать. */
 }
 
 @media (min-width: 1000px) {
-
+  
   .save__button {
     align-items: center;
     flex-direction: row;

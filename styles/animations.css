@@ -1,7 +1,3 @@
-/* Вы не думайте, что я совсем глупый человек...:((
-я просто напутала классы у сердца и поэтому так много несостыковок в анимации было,
-а так она была написана правильно.....:))) */
-
 @keyframes arrow {
 
   0% {
@@ -42,21 +38,19 @@
 .like-icon {
   inline-size: 38px;
   block-size: 36px;
-  transition: linear;
 }
 
-.main-body {
-  transition: 0.3s;
+.core {
+  transition: 0.3s linear;
   transition-delay: 0.03s;
 }
 
 .contour {
-  transition: 0.1s;
-  transition-delay: 0.06s;
+  transition: 0.1s linear;
 }
 
-.core {
-  transition: 0.03s;
+.main-body {
+  transition: 0.3s linear;
 }
 
 .sparks {
@@ -65,40 +59,40 @@
 
 .card__icon-button:hover .core {
   fill: var(--main-text-color);
-  transition: 0.3s;
+  transition: 0.3s linear;
 }
 
 .card__icon-button:hover .main-body {
   fill: var(--main-text-color);
-  transition: 0.3s;
+  transition: 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .card__icon-button:active .core {
   fill: var(--svg-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .main-body {
   fill: var(--svg-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core{
   fill: var(--svg-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--svg-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--svg-fill-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.06s;
 }
 

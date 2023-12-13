@@ -1,8 +1,8 @@
 :root {
   --font-family-main: "Inter-Variable", sans-serif;
   --font-family-accent: "PressStart2P", sans-serif;
-  --font-weight-text: 465;
-  --font-weight-title: 785;
+  --font-variation-settings-text: "wght" 400;
+  --font-variation-settings-title: "wght" 700;
   --font-size: 18px;
   --main-text-color: #000;
   --bg-color: #fff;
