@@ -25,6 +25,8 @@
   --svg-starting-color: #fff;
   --backdrop: #000;
   --svg-floppy: #fff;
+  --font-variation-settings-text: "wght" 400;
+  --font-variation-settings-title: "wght" 700;
 }
 
 :root.theme-dark {
